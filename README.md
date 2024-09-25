@@ -3,9 +3,26 @@
 # Projeto de Extensão - Estácio
 ## | Objetivo principal
 
-<!-- O objetivo central de criar projetos de desenvolvimento web para o portfólio é demonstrar minhas habilidades, conhecimentos e experiência como desenvolvedor de softwares para potenciais empregadores, clientes e colegas de trabalho. 
+Distinguir o paradigma de orientação a objeto em face do paradigma estruturado, fazendo a reflexão
+sobre os conceitos chaves de classe e objetos e suas coleções, para construir programas que reflitam
+estruturas do mundo real.
 
-Esse portfólio serve como uma maneira eficaz de exibir meu trabalho e destacar-me no mercado de desenvolvimento web. -->
+Codificar classes, utilizando o mecanismo de herança, permitindo a criação de novas classes a partir
+de classes já existentes, de forma a reaproveitar códigos já escritos.
+Especificar interfaces e classes abstratas, definindo atributos, métodos e assinatura de métodos, com o
+objetivo de definir um contrato na qual uma classe se compromete a fornecer o comportamento
+publicado.
+
+Empregar o mecanismo de manipulação de exceções, realizando a captura e o tratamento corretos,
+para tratar situações onde a recuperação da situação de erro é possível.
+Aplicar o conceito de programação paralela, utilizando o mecanismo de threads, para executar ações
+cuja percepção do usuário leva a crer que estão sendo executadas ao mesmo tempo.
+
+Construir uma aplicação que se comunique com banco de dados, utilizando a API JDBC, para realizar
+operações de inserção, seleção, atualização e deleção de dados.
+
+Além de desenvolver minhas softskills também durante o processo de aprendizado, desenvolvimento e compartilhamento dos projeto de extensão.
+
 
 ## | O Projeto: Sistema Gerenciador de Estoque.
 
