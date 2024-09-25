@@ -1,5 +1,3 @@
-[Readme in english](https://github.com/lucasgleria/projeto-de-extensao?tab=readme-ov-file#extension-project---estácio)
-
 # Projeto de Extensão - Estácio
 ## | Objetivo principal
 
@@ -106,8 +104,8 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
     * Editar Produtos
     * ![imagem](images/gui/soli-ed-id-produto-gui.PNG)
         * Solicita ao usuário o novo nome do produto
-        * Solicita ao usuário o novo preço do produto
         * ![imagem](images/gui/soli-ed-nome-produto-gui.PNG)
+        * Solicita ao usuário o novo preço do produto
         * ![imagem](images/gui/soli-ed-preco-produto-gui.PNG)
     * Editar Clientes
     * ![imagem](images/gui/soli-ed-id-cliente-gui.PNG)
@@ -241,6 +239,3 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 ## | Anexos
 
 * [Meu artigo](images/artigo/55e91f58922c84a3ecb5e3ce34cbcfeb094ebf1da57566505159d35d6fc8f979-1727230588255.pdf)
-
-
-# Extension Project - Estácio
