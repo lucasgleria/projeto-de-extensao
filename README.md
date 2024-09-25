@@ -125,12 +125,49 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 >>> utils
 >>>> Pasta destinada para reutilizção de código e organização da Main
 
+### | Versão GUI:
+> .vscode
+>> Pasta destinada para configurações da IDE
+
+> demo
+>> Pasta destinada ao projeto (utilizando Maven)
+>>> target/classes
+>>>> Pasta destinada para as classes do java (geradas automaticamente)
+>>
+>>> src/main
+>>>> java
+>>>>> Pasta destinada para desenvolvimento dos scripts em java
+>>> >>> dao
+>>>> Pasta destinada para 'Decentralized Autonomous Organization'
+>>
+>>> db
+>>>> Pasta destinada para conexão com banco de dados
+>>
+>>> interfaces
+>>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
+>>
+>>> model
+>>>> Pasta destinada para registro dos modelos das classes
+>>
+>>> service
+>>>> Pasta destinada para agrupar serviços executados pelo sistema
+>>
+>>> thread
+>>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
+>>
+>>> utils
+>>>> Pasta destinada para reutilizção de código e organização da Main
+
+>>>> resources/icons
+>>>>> Pasta destinada para elementos visuais
+
 ## | Tecnologias Utilizadas
 
 **Desenvolvimento da Aplicação**
 
 [![Java](https://img.shields.io/badge/java-FFFFFF?style=for-the-badge&logo=oracle&logoColor=000)](https://docs.oracle.com/en/java/)
-[![JFrane](https://img.shields.io/badge/jframe-FFFFFF?style=for-the-badge&logo=oracle&logoColor=000)](https://docs.oracle.com/en/java/)
+[![JFrame](https://img.shields.io/badge/jframe-FFFFFF?style=for-the-badge&logo=oracle&logoColor=000)](https://docs.oracle.com/en/java/)
+[![Maven](https://img.shields.io/badge/maven-FFFFFF?style=for-the-badge&logo=apache&logoColor=000)](https://maven.apache.org)
 
 **Desenvolvimento, manipulação e hospedagem do Banco de Dados**
 
