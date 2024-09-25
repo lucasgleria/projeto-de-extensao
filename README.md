@@ -31,28 +31,36 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
         * Questiona se todos os produtos foram adicionados
     * Adicionar Clientes
         * Solicita ao usuário o nome do cliente
+    * ![imagem](images/cli/adicionar-cli.PNG)
     * Adição de Produtos a Clientes existentes
         * Solicita o id do Cliente
         * Entra no loop de adição de produtos
+        * ![imagem](images/cli/adicionar-novo-cli.PNG)
 * Funcionalidade de **EDIÇÃO**
     * Editar Produtos
         * Solicita ao usuário o novo nome do produto
         * Solicita ao usuário o novo preço do produto
+        * ![imagem](images/cli/editar-produto-cli.PNG)
     * Editar Clientes
         * Solicita ao usuário o novo nome do cliente
+        * ![imagem](images/cli/editar-cliente-cli.PNG)
 * Funcionalidade de **EXIBIÇÃO/LISTAGEM**
     * Lista todos os clientes e produtos diponíveis no banco de dados
+    * ![imagem](images/cli/listagem-clientes-cli.PNG)
 * Funcionalidade de **DELEÇÃO**
     * Excluir Cliente 
         * Exibe uma listagem de todos os clientes disponíveis
         * Solicita o id do cliente para ser deletado.
+        * ![imagem](images/cli/excluir-cliente-cli.PNG)
     * Excluir todos os Clientes
         * Questiona se a ação deve ser mesmo efetuada
+        * ![imagem](images/cli/excluir-todos-cli.PNG)
     * Deletar Produtos de Cliente Existente
         * Exibe uma listagem de todos os clientes e seus produtos
         * Solicita o id do cliente para deletar produtos
         * Exibe uma listagem de todos os produtos do cliente selecionado
         * Solicita o id do produto a ser deletado
+        * ![imagem](images/cli/deletar-produto-de-cliente-cli.PNG)
 
 
 ### | Versão GUI:
