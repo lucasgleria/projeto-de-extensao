@@ -320,7 +320,7 @@ public class App extends JFrame {
 
 private List<Produto> processarPlanilhaDoGoogleSheets(String sheetUrl) {
     List<Produto> produtos = new ArrayList<>();
-    String apiKey = "AIzaSyA5JS-OGg93WTcR86_UB7AgTLm6T6__N8Q"; 
+    String apiKey = "#"; // Insira sua api do google sheets aqui 
     String sheetId = extrairIdDaURL(sheetUrl);
     String range = "Página1!A1:C100"; 
     
