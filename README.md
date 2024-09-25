@@ -137,27 +137,27 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 >>> src/main
 >>>> java
 >>>>> Pasta destinada para desenvolvimento dos scripts em java
->>> >>> dao
->>>> Pasta destinada para 'Decentralized Autonomous Organization'
->>
->>> db
->>>> Pasta destinada para conexão com banco de dados
->>
->>> interfaces
->>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
->>
->>> model
->>>> Pasta destinada para registro dos modelos das classes
->>
->>> service
->>>> Pasta destinada para agrupar serviços executados pelo sistema
->>
->>> thread
->>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
->>
->>> utils
->>>> Pasta destinada para reutilizção de código e organização da Main
-
+>>>>>> dao
+>>>>>>> Pasta destinada para 'Decentralized Autonomous Organization'
+>>>>>
+>>>>>> db
+>>>>>>> Pasta destinada para conexão com banco de dados
+>>>>>
+>>>>>> interfaces
+>>>>>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
+>>>>>
+>>>>>> model
+>>>>>>> Pasta destinada para registro dos modelos das classes
+>>>>>
+>>>>>> service
+>>>>>>> Pasta destinada para agrupar serviços executados pelo sistema
+>>>>>
+>>>>>> thread
+>>>>>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
+>>>>>
+>>>>>> utils
+>>>>>>> Pasta destinada para reutilizção de código e organização da Main
+>>>
 >>>> resources/icons
 >>>>> Pasta destinada para elementos visuais
 
