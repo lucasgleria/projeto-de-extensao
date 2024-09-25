@@ -21,7 +21,9 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 ### | Versão CLI:
 
 * Loop de menu principal
-![imagem](images/)
+
+![imagem](images/cli/menu-cli.PNG)
+
 * Funcionalidade de **ADIÇÃO**
     * Adicionar Produtos
         * Solicita ao usuário o nome do produto
@@ -56,39 +58,55 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 ### | Versão GUI:
 
 * Interface Gráfica Principal
+* ![imagem](images/gui/menu-gui.PNG)
 * Funcionalidade de **ADIÇÃO**
+* ![imagem](images/gui/opc-adicionar-gui.PNG)
     * Adicionar Manualmente
         * Adicionar Produtos
             * Solicita ao usuário o nome do produto
             * Solicita ao usuário o preço do produto
+            * ![imagem](images/gui/soli-adc-nom-produto-gui.PNG)
             * Questiona se todos os produtos foram adicionados
+            * ![imagem](images/gui/ques-todos-produtos-adc-gui.PNG)
         * Adicionar Clientes
             * Solicita ao usuário o nome do cliente
-        * Adição de Produtos a Clientes existentes
-            * Solicita o id do Cliente
-            * Entra no loop de adição de produtos
+            * ![imagem](images/gui/soli-adc-nom-cliente-gui.PNG)
     * Adicionar pela Planilha
         * Exibe uma tela de loading dinâmica
+        * ![imagem](images/gui/carregamento-adc-planilha-gui.PNG)
         * Adiciona clientes e produtos automáticamente de uma planilha google sheets
+        * ![imagem](images/gui/adc-planilha-sucesso-gui.PNG)
 * Funcionalidade de **EDIÇÃO**
+* ![imagem](images/gui/opc-editar-gui.PNG)
     * Editar Produtos
+    * ![imagem](images/gui/soli-ed-id-produto-gui.PNG)
         * Solicita ao usuário o novo nome do produto
         * Solicita ao usuário o novo preço do produto
+        * ![imagem](images/gui/soli-ed-nome-produto-gui.PNG)
+        * ![imagem](images/gui/soli-ed-preco-produto-gui.PNG)
     * Editar Clientes
+    * ![imagem](images/gui/soli-ed-id-cliente-gui.PNG)
         * Solicita ao usuário o novo nome do cliente
+        * ![imagem](images/gui/soli-ed-nom-cliente-gui.PNG)
 * Funcionalidade de **EXIBIÇÃO/LISTAGEM**
     * Lista todos os clientes e produtos diponíveis no banco de dados
+    * ![imagem](images/gui/listagem-clientes-gui.PNG)
 * Funcionalidade de **DELEÇÃO**
-    * Deletar Cliente 
+* ![imagem](images/gui/opc-deletar-gui.PNG)
+    * Deletar Cliente
         * Exibe uma listagem de todos os clientes disponíveis
-        * Solicita o id do cliente para ser deletado.
+            * Solicita o id do cliente para ser deletado.
+            * ![imagem](images/gui/soli-del-cliente-gui.PNG) 
         * Excluir todos os Clientes
             * Questiona se a ação deve ser mesmo efetuada
+            * ![imagem](images/gui/soli-del-todos-gui.PNG)
     * Deletar Produtos 
         * Exibe uma listagem de todos os clientes e seus produtos
         * Solicita o id do cliente para deletar produtos
+        * ![imagem](images/gui/soli-del-cliente-gui.PNG)
         * Exibe uma listagem de todos os produtos do cliente selecionado
         * Solicita o id do produto a ser deletado
+        * ![imagem](images/gui/soli-del-id-produto-gui.PNG)
 
 ## | Detalhes
 
@@ -197,7 +215,7 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 
 ## | Anexos
 
-* [Meu artigo](link_pdf)
+* [Meu artigo](images/artigo/55e91f58922c84a3ecb5e3ce34cbcfeb094ebf1da57566505159d35d6fc8f979-1727230588255.pdf)
 
 
 # Extension Project - Estácio
