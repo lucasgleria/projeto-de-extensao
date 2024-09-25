@@ -19,25 +19,111 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 ## | O que encontrarei nesse software?
 
 ### | Versão CLI:
-* Página de _Início_
-    * Breve descrição do Projeto
-    * Botões para inscrição
-    * Sucinto formulário para envio de materias _(indisponíveis)_ ao e-mail do usuário 
-* Página de _Cursos_
-    * Exibição de todos os cursos disponíveis em carrossel
-* Página de _Eventos_
-    * Exibição de todos os eventos disponíveis _(fictícios)_
-* Página de _Contato_
-    * Entre em contato com a **Equipe de Desenvolvedores dessa aplicação**
-* Página de _SignUp_
-    * Tela simples de SignUp
-        * Requisitando email, nome, senha e confirmação de senha
-* Página de _LogIn_
-    * Tela simples de LogIn
-        * Requistiando email e senha
+
+* Loop de menu principal
+![imagem](images/)
+* Funcionalidade de **ADIÇÃO**
+    * Adicionar Produtos
+        * Solicita ao usuário o nome do produto
+        * Solicita ao usuário o preço do produto
+        * Questiona se todos os produtos foram adicionados
+    * Adicionar Clientes
+        * Solicita ao usuário o nome do cliente
+    * Adição de Produtos a Clientes existentes
+        * Solicita o id do Cliente
+        * Entra no loop de adição de produtos
+* Funcionalidade de **EDIÇÃO**
+    * Editar Produtos
+        * Solicita ao usuário o novo nome do produto
+        * Solicita ao usuário o novo preço do produto
+    * Editar Clientes
+        * Solicita ao usuário o novo nome do cliente
+* Funcionalidade de **EXIBIÇÃO/LISTAGEM**
+    * Lista todos os clientes e produtos diponíveis no banco de dados
+* Funcionalidade de **DELEÇÃO**
+    * Excluir Cliente 
+        * Exibe uma listagem de todos os clientes disponíveis
+        * Solicita o id do cliente para ser deletado.
+    * Excluir todos os Clientes
+        * Questiona se a ação deve ser mesmo efetuada
+    * Deletar Produtos de Cliente Existente
+        * Exibe uma listagem de todos os clientes e seus produtos
+        * Solicita o id do cliente para deletar produtos
+        * Exibe uma listagem de todos os produtos do cliente selecionado
+        * Solicita o id do produto a ser deletado
+
 
 ### | Versão GUI:
 
+* Interface Gráfica Principal
+* Funcionalidade de **ADIÇÃO**
+    * Adicionar Manualmente
+        * Adicionar Produtos
+            * Solicita ao usuário o nome do produto
+            * Solicita ao usuário o preço do produto
+            * Questiona se todos os produtos foram adicionados
+        * Adicionar Clientes
+            * Solicita ao usuário o nome do cliente
+        * Adição de Produtos a Clientes existentes
+            * Solicita o id do Cliente
+            * Entra no loop de adição de produtos
+    * Adicionar pela Planilha
+        * Exibe uma tela de loading dinâmica
+        * Adiciona clientes e produtos automáticamente de uma planilha google sheets
+* Funcionalidade de **EDIÇÃO**
+    * Editar Produtos
+        * Solicita ao usuário o novo nome do produto
+        * Solicita ao usuário o novo preço do produto
+    * Editar Clientes
+        * Solicita ao usuário o novo nome do cliente
+* Funcionalidade de **EXIBIÇÃO/LISTAGEM**
+    * Lista todos os clientes e produtos diponíveis no banco de dados
+* Funcionalidade de **DELEÇÃO**
+    * Deletar Cliente 
+        * Exibe uma listagem de todos os clientes disponíveis
+        * Solicita o id do cliente para ser deletado.
+        * Excluir todos os Clientes
+            * Questiona se a ação deve ser mesmo efetuada
+    * Deletar Produtos 
+        * Exibe uma listagem de todos os clientes e seus produtos
+        * Solicita o id do cliente para deletar produtos
+        * Exibe uma listagem de todos os produtos do cliente selecionado
+        * Solicita o id do produto a ser deletado
+
+## | Detalhes
+
+### | Versão CLI:
+> .vscode
+>> Pasta destinada para configurações da IDE
+
+> bin
+>> Pasta destinada para as classes do java (geradas automaticamente)
+
+> lib
+>> Pasta destinada para bibliotecas externas
+
+> src
+>> Pasta destinada para desenvolvimento dos scripts em java
+>>> dao
+>>>> Pasta destinada para 'Decentralized Autonomous Organization'
+>>
+>>> db
+>>>> Pasta destinada para conexão com banco de dados
+>>
+>>> interfaces
+>>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
+>>
+>>> model
+>>>> Pasta destinada para registro dos modelos das classes
+>>
+>>> service
+>>>> Pasta destinada para agrupar serviços executados pelo sistema
+>>
+>>> thread
+>>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
+>>
+>>> utils
+>>>> Pasta destinada para reutilizção de código e organização da Main
 
 ## | Tecnologias Utilizadas
 
@@ -49,6 +135,8 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 **Desenvolvimento, manipulação e hospedagem do Banco de Dados**
 
 [![MySQL](https://img.shields.io/badge/MySQL-FFFFFF?style=for-the-badge&logo=mysql&logoColor=000)](https://docs.mysql.com/)
+[![Google Sheets](https://img.shields.io/badge/Google_spreadsheets-FFFFFF?style=for-the-badge&logo=google&logoColor=000)](https://docs.google.com/spreadsheets/)
+
 
 **Manipulação, controle e hospedagem de dados e versões**
 
@@ -73,5 +161,6 @@ Neste repositório está o projeto de extensão em java, desenvolvido por mim.
 ## | Anexos
 
 * [Meu artigo](link_pdf)
+
 
 # Extension Project - Estácio
