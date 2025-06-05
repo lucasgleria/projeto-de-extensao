@@ -171,7 +171,7 @@ Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais informações.
 
 ## 🔍 Recursos Adicionais
 
-- [Artigo Técnico](images/artigo/artigo.pdf) - Detalhes da implementação
+- [Artigo Técnico](images/artigo/55e91f58922c84a3ecb5e3ce34cbcfeb094ebf1da57566505159d35d6fc8f979-1727230588255.pdf) - Detalhes da implementação
 - [W3Schools Java](https://www.w3schools.com/java/) - Referência inicial
 - [Oracle JDBC Docs](https://docs.oracle.com/en/java/) - Documentação oficial  
 
