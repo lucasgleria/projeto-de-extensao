@@ -1,241 +1,178 @@
-# Projeto de Extensão - Estácio
-## | Objetivo principal
+# 📦 Sistema Gerenciador de Estoque em Java  
 
-Distinguir o paradigma de orientação a objeto em face do paradigma estruturado, fazendo a reflexão
-sobre os conceitos chaves de classe e objetos e suas coleções, para construir programas que reflitam
-estruturas do mundo real.
+**Aplicação Java para gestão de estoque com versões CLI e GUI**
 
-Codificar classes, utilizando o mecanismo de herança, permitindo a criação de novas classes a partir
-de classes já existentes, de forma a reaproveitar códigos já escritos.
-Especificar interfaces e classes abstratas, definindo atributos, métodos e assinatura de métodos, com o
-objetivo de definir um contrato na qual uma classe se compromete a fornecer o comportamento
-publicado.
+[![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-3.5.2-green.svg)]()
+[![Status](https://img.shields.io/badge/status-concluído-brightgreen.svg)]()
+[![deploy](https://img.shields.io/badge/depoly-inactive-red.svg)]()
 
-Empregar o mecanismo de manipulação de exceções, realizando a captura e o tratamento corretos,
-para tratar situações onde a recuperação da situação de erro é possível.
-Aplicar o conceito de programação paralela, utilizando o mecanismo de threads, para executar ações
-cuja percepção do usuário leva a crer que estão sendo executadas ao mesmo tempo.
+## 📌 Sumário
 
-Construir uma aplicação que se comunique com banco de dados, utilizando a API JDBC, para realizar
-operações de inserção, seleção, atualização e deleção de dados.
+1. [Sobre o Projeto](#-sobre-o-projeto)  
+2. [Objetivos](#-objetivos)  
+3. [Tecnologias](#-tecnologias)  
+4. [Funcionalidades](#-funcionalidades)  
+5. [Pré-requisitos](#%EF%B8%8F-pré-requisitos)  
+6. [Instalação](#%EF%B8%8F-instalação)  
+7. [Como utilizar](#-como-utilizar)
+8. [Estrutura do Projeto](#-estrutura-do-projeto)
+9. [Contribuição](#-contribuição)  
+10. [Licença](#-licença)  
+11. [Contato](#-contato)  
+12. [Recursos Adicionais](#-recursos-adicionais)  
 
-Além de desenvolver minhas softskills também durante o processo de aprendizado, desenvolvimento e compartilhamento dos projeto de extensão.
+## 💻 Sobre o Projeto  
 
+O **Sistema Gerenciador de Estoque em Java** é um projeto de extensão acadêmica  que demonstra a aplicação dos princípios de Programação Orientada a Objetos. Surgiu da necessidade de uma comerciante local que geria pedidos manualmente via WhatsApp e caderno, demandando 2+ horas diárias
 
-## | O Projeto: Sistema Gerenciador de Estoque.
+- **Motivação**: Aplicar conceitos avançados de POO para resolver um problema real da comunidade
+- **Público-alvo**: Bancada avaliadora, estudantes de programação, e pequenos comerciantes
+- **Problema resolvido**: Automatização de tarefas manuais de gestão de pedidos
+- **Diferenciais**: 
+  - Duas interfaces (CLI para aprendizado e GUI para uso prático)
+  - Integração com banco de dados e planilhas Google Sheets
+  - Programação paralela com threads para melhor experiência
+- **Metodologia**: Desenvolvimento ágil com princípios SOLID  
 
-Neste repositório está o projeto de extensão em java, desenvolvido por mim.
+## 🎯 Objetivos  
 
-* Público Alvo: _Bancada Avaliativa_
-* Tema do software: Aplicação em formato de **Sistema gerenciador de estoque automatizado.**
-* Disponiblizamos: Acesso à todas as rotas.
- > Ps: As versões disponibilizadas são as últimas possiveis a serem compartilhadas para que informações sigilosas do cliente final não fosse vazado.
+### 🛠 Técnicos  
+- Implementar os 5 pilares essenciais:
+  1. Programação paralela com Threads
+  2. Herança e reutilização de código
+  3. Manipulação robusta de exceções
+  4. Uso de interfaces e classes abstratas
+  5. Integração JDBC com banco de dados
+- Aplicar padrões SOLID de arquitetura
 
-## | O que encontrarei nesse software?
+### 📚 Acadêmicos  
+- Dominar Java em 4 semanas (partindo de conhecimento prévio em Python)
+- Documentar todo o processo de aprendizado
+- Compartilhar conhecimento com aspirantes a desenvolvedores
 
-### | Versão CLI:
+### 🌍 Sociais  
+- Reduzir em 80% o tempo de gestão manual da comerciante beneficiada
+- Capacitar 5+ jovens da comunidade com noções de POO
+- Promover inclusão digital para pequenos comerciantes  
 
-* Loop de menu principal
+## 🚀 Tecnologias  
 
-![imagem](images/cli/menu-cli.PNG)
+**Núcleo do Sistema**  
+- Java SE (com Swing para GUI)
+- JDBC (MySQL Connector)
+- Programação Multithread
 
-* Funcionalidade de **ADIÇÃO**
-    * Adicionar Produtos
-        * Solicita ao usuário o nome do produto
-        * Solicita ao usuário o preço do produto
-        * Questiona se todos os produtos foram adicionados
-    * Adicionar Clientes
-        * Solicita ao usuário o nome do cliente
-    * ![imagem](images/cli/adicionar-cli.PNG)
-    * Adição de Produtos a Clientes existentes
-        * Solicita o id do Cliente
-        * Entra no loop de adição de produtos
-        * ![imagem](images/cli/adicionar-novo-cli.PNG)
-* Funcionalidade de **EDIÇÃO**
-    * Editar Produtos
-        * Solicita ao usuário o novo nome do produto
-        * Solicita ao usuário o novo preço do produto
-        * ![imagem](images/cli/editar-produto-cli.PNG)
-    * Editar Clientes
-        * Solicita ao usuário o novo nome do cliente
-        * ![imagem](images/cli/editar-cliente-cli.PNG)
-* Funcionalidade de **EXIBIÇÃO/LISTAGEM**
-    * Lista todos os clientes e produtos diponíveis no banco de dados
-    * ![imagem](images/cli/listagem-clientes-cli.PNG)
-* Funcionalidade de **DELEÇÃO**
-    * Excluir Cliente 
-        * Exibe uma listagem de todos os clientes disponíveis
-        * Solicita o id do cliente para ser deletado.
-        * ![imagem](images/cli/excluir-cliente-cli.PNG)
-    * Excluir todos os Clientes
-        * Questiona se a ação deve ser mesmo efetuada
-        * ![imagem](images/cli/excluir-todos-cli.PNG)
-    * Deletar Produtos de Cliente Existente
-        * Exibe uma listagem de todos os clientes e seus produtos
-        * Solicita o id do cliente para deletar produtos
-        * Exibe uma listagem de todos os produtos do cliente selecionado
-        * Solicita o id do produto a ser deletado
-        * ![imagem](images/cli/deletar-produto-de-cliente-cli.PNG)
+**Banco de Dados & Integração**  
+- MySQL 8.0
+- Google Sheets API
 
+**Ferramentas**  
+- Maven (gerenciamento de dependências)
 
-### | Versão GUI:
+## ✨ Funcionalidades  
 
-* Interface Gráfica Principal
-* ![imagem](images/gui/menu-gui.PNG)
-* Funcionalidade de **ADIÇÃO**
-* ![imagem](images/gui/opc-adicionar-gui.PNG)
-    * Adicionar Manualmente
-        * Adicionar Produtos
-            * Solicita ao usuário o nome do produto
-            * Solicita ao usuário o preço do produto
-            * ![imagem](images/gui/soli-adc-nom-produto-gui.PNG)
-            * Questiona se todos os produtos foram adicionados
-            * ![imagem](images/gui/ques-todos-produtos-adc-gui.PNG)
-        * Adicionar Clientes
-            * Solicita ao usuário o nome do cliente
-            * ![imagem](images/gui/soli-adc-nom-cliente-gui.PNG)
-    * Adicionar pela Planilha
-        * Exibe uma tela de loading dinâmica
-        * ![imagem](images/gui/carregamento-adc-planilha-gui.PNG)
-        * Adiciona clientes e produtos automáticamente de uma planilha google sheets
-        * ![imagem](images/gui/adc-planilha-sucesso-gui.PNG)
-* Funcionalidade de **EDIÇÃO**
-* ![imagem](images/gui/opc-editar-gui.PNG)
-    * Editar Produtos
-    * ![imagem](images/gui/soli-ed-id-produto-gui.PNG)
-        * Solicita ao usuário o novo nome do produto
-        * ![imagem](images/gui/soli-ed-nome-produto-gui.PNG)
-        * Solicita ao usuário o novo preço do produto
-        * ![imagem](images/gui/soli-ed-preco-produto-gui.PNG)
-    * Editar Clientes
-    * ![imagem](images/gui/soli-ed-id-cliente-gui.PNG)
-        * Solicita ao usuário o novo nome do cliente
-        * ![imagem](images/gui/soli-ed-nom-cliente-gui.PNG)
-* Funcionalidade de **EXIBIÇÃO/LISTAGEM**
-    * Lista todos os clientes e produtos diponíveis no banco de dados
-    * ![imagem](images/gui/listagem-clientes-gui.PNG)
-* Funcionalidade de **DELEÇÃO**
-* ![imagem](images/gui/opc-deletar-gui.PNG)
-    * Deletar Cliente
-        * Exibe uma listagem de todos os clientes disponíveis
-            * Solicita o id do cliente para ser deletado.
-            * ![imagem](images/gui/soli-del-cliente-gui.PNG) 
-        * Excluir todos os Clientes
-            * Questiona se a ação deve ser mesmo efetuada
-            * ![imagem](images/gui/soli-del-todos-gui.PNG)
-    * Deletar Produtos 
-        * Exibe uma listagem de todos os clientes e seus produtos
-        * Solicita o id do cliente para deletar produtos
-        * ![imagem](images/gui/soli-del-cliente-gui.PNG)
-        * Exibe uma listagem de todos os produtos do cliente selecionado
-        * Solicita o id do produto a ser deletado
-        * ![imagem](images/gui/soli-del-id-produto-gui.PNG)
+### 📟 Versão CLI (Educacional)
+- ✅ **CRUD Completo** com tratamento de exceções
+- ✅ **Menu interativo** com loops aninhados
+- ✅ **Operações em lote** (exclusão múltipla)
 
-## | Detalhes
+### 🖥 Versão GUI (Produtiva)
+- ✅ **Importação automática** de planilhas Google Sheets
+- ✅ **Telas de loading** durante operações demoradas
+- ✅ **Validação robusta** de entradas do usuário
+- ✅ **Relatórios visuais** de estoque e clientes
+- ✅ **Backup automático** dos dados
 
-### | Versão CLI:
-> .vscode
->> Pasta destinada para configurações da IDE
+## ⚙ Pré-requisitos  
 
-> bin
->> Pasta destinada para as classes do java (geradas automaticamente)
+- Java JDK 17+ (com JRE configurado)
+- MySQL 8.0+ (ou serviço equivalente)
+- Credenciais Google API (para Sheets)
+- 2GB+ RAM (4GB recomendado)
+- Conexão estável à internet  
 
-> lib
->> Pasta destinada para bibliotecas externas
+## 🛠 Instalação  
 
-> src
->> Pasta destinada para desenvolvimento dos scripts em java
->>> dao
->>>> Pasta destinada para 'Decentralized Autonomous Organization'
->>
->>> db
->>>> Pasta destinada para conexão com banco de dados
->>
->>> interfaces
->>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
->>
->>> model
->>>> Pasta destinada para registro dos modelos das classes
->>
->>> service
->>>> Pasta destinada para agrupar serviços executados pelo sistema
->>
->>> thread
->>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
->>
->>> utils
->>>> Pasta destinada para reutilizção de código e organização da Main
+1. Clone o repositório:
 
-### | Versão GUI:
-> .vscode
->> Pasta destinada para configurações da IDE
+```bash
+git clone https://github.com/lucasgleria/projeto-de-extensao.git
+```
 
-> demo
->> Pasta destinada ao projeto (utilizando Maven)
->>> target/classes
->>>> Pasta destinada para as classes do java (geradas automaticamente)
->>
->>> src/main
->>>> java
->>>>> Pasta destinada para desenvolvimento dos scripts em java
->>>>>> dao
->>>>>>> Pasta destinada para 'Decentralized Autonomous Organization'
->>>>>
->>>>>> db
->>>>>>> Pasta destinada para conexão com banco de dados
->>>>>
->>>>>> interfaces
->>>>>>> Pasta destinada para maior nível de abstração, contendo todas as interfaces
->>>>>
->>>>>> model
->>>>>>> Pasta destinada para registro dos modelos das classes
->>>>>
->>>>>> service
->>>>>>> Pasta destinada para agrupar serviços executados pelo sistema
->>>>>
->>>>>> thread
->>>>>>> Pasta destinada para agrupar as threads que executarão paralelamente ao sistema
->>>>>
->>>>>> utils
->>>>>>> Pasta destinada para reutilizção de código e organização da Main
->>>
->>>> resources/icons
->>>>> Pasta destinada para elementos visuais
+2. Configure o ambiente:
 
-## | Tecnologias Utilizadas
+```bash
+# Configure o banco de dados (script incluído em /db)
+mysql -u root -p < db/setup.sql
 
-**Desenvolvimento da Aplicação**
+# Atualize as credenciais
+nano src/db/config.properties
+```
 
-[![Java](https://img.shields.io/badge/java-FFFFFF?style=for-the-badge&logo=oracle&logoColor=000)](https://docs.oracle.com/en/java/)
-[![JFrame](https://img.shields.io/badge/jframe-FFFFFF?style=for-the-badge&logo=oracle&logoColor=000)](https://docs.oracle.com/en/java/)
-[![Maven](https://img.shields.io/badge/maven-FFFFFF?style=for-the-badge&logo=apache&logoColor=000)](https://maven.apache.org)
+3. Construa o projeto:
+```bash
+mvn clean package
+```
 
-**Desenvolvimento, manipulação e hospedagem do Banco de Dados**
+## ❗ Como Utilizar
 
-[![MySQL](https://img.shields.io/badge/MySQL-FFFFFF?style=for-the-badge&logo=mysql&logoColor=000)](https://docs.mysql.com/)
-[![Google Sheets](https://img.shields.io/badge/Google_spreadsheets-FFFFFF?style=for-the-badge&logo=google&logoColor=000)](https://docs.google.com/spreadsheets/)
+### Modo Desenvolvedor (CLI):
+```bash
+java -jar target/estoque-cli.jar --educacional
+```
+
+### Modo Produção (GUI):
+```bash
+java -jar target/estoque-gui.jar
+```
+
+### ▶ Demonstração
+
+![Fluxo CLI](images/cli/menu-cli.PNG)
+
+_Menu hierárquico da versão CLI_
+
+![Dashboard GUI](images/gui/menu-gui.PNG)
+
+_Painel principal da versão GUI_
 
 
-**Manipulação, controle e hospedagem de dados e versões**
+## 📂 Arquitetura do Sistema  
 
-[![GitHub](https://img.shields.io/badge/GitHub-FFFFFF?style=for-the-badge&logo=github&logoColor=000)](https://docs.github.com/)
-[![Git](https://img.shields.io/badge/Git-FFFFFF?style=for-the-badge&logo=git&logoColor=000)](https://git-scm.com/doc)
+```plaintext
+src/
+├── model/              # Entidades de negócio (Cliente, Produto)
+├── dao/                # Padrão Data Access Object
+├── service/            # Lógica de negócio
+├── interfaces/         # Contratos (IClienteRepository, etc.)
+├── thread/             # Processos paralelos
+├── utils/              # Helpers e validadores
+└── db/                 # Conexão JDBC e migrações
+```
 
+## 🤝 Contribuição
+Contribuições são bem-vindas! Siga estas etapas:
 
-## | Equipe
+1. Reporte bugs: Abra uma [issue](https://github.com/lucasgleria/projeto-de-extensao/issues) no GitHub.
+2. Sugira melhorias: Envie ideias ou pull requests com novas funcionalidades.
+3. Desenvolva:
+- Faça um fork do projeto.
+- Crie uma branch (git checkout -b feature/nova-funcionalidade).
+- Envie um Pull Request.
 
-* [Lucas Gomes Leria](https://www.linkedin.com/in/lucasleria/) - Desenvolvedor UX e Programador Fullstack.
+## 📜 Licença  
 
-## | Fontes
+Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais informações. 
 
-* [Estácio](https://estacio.br/) - Conteúdo avançado em java; Proposta inicial do projeto extensionista. 
+## 📞 Contato
+- **Autor**: [Lucas Leria](https://github.com/lucasgleria)
+- **LinkedIn**: [lucasgleria](https://www.linkedin.com/in/lucasgleria/)  
 
-* [W3 Schools](https://www.w3schools.com/java/) - Documentação utilizada para aprendizagem inicial dos fundamentos básicos e intermediários do conteúdo.
+## 🔍 Recursos Adicionais
 
-* [Oracle](https://docs.oracle.com/en/java/) - Documentação oficial do Java utilizada para o desenvolvimento da aplicação.
+- [Artigo Técnico](images/artigo/artigo.pdf) - Detalhes da implementação
+- [W3Schools Java](https://www.w3schools.com/java/) - Referência inicial
+- [Oracle JDBC Docs](https://docs.oracle.com/en/java/) - Documentação oficial  
 
-* [Oracle - JFrame](https://docs.oracle.com/javase/8/docs/api/javax/swing/JFrame.html) - Documentação oficial do JFrame utilizada para o desenvolvimento da aplicação.
-
-## | Anexos
-
-* [Meu artigo](images/artigo/55e91f58922c84a3ecb5e3ce34cbcfeb094ebf1da57566505159d35d6fc8f979-1727230588255.pdf)
+> Projeto extensionista desenvolvido para a [Estácio](https://estacio.br/) como parte da disciplina de POO em Java.
